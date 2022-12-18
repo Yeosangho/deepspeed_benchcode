@@ -1,0 +1,153 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+srun: error: gpu16: tasks 4,6: Exited with exit code 1
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+srun: error: gpu16: task 5: Exited with exit code 1
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+srun: error: gpu15: task 0: Exited with exit code 1
+srun: error: gpu15: task 3: Exited with exit code 1
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 167, in <module>
+    model_engine, optimizer, __, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 798, in __init__
+    self._configure_train_batch_size()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 967, in _configure_train_batch_size
+    self._batch_assertion()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 906, in _batch_assertion
+    assert (
+AssertionError: Micro batch size per gpu: 0 has to be greater than 0
+srun: error: gpu16: task 7: Exited with exit code 1
+srun: error: gpu15: task 2: Exited with exit code 1
+srun: error: gpu15: task 1: Exited with exit code 1

@@ -1,0 +1,93 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    self.run()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 870, in run
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 3062) is killed by signal: Terminated. 
+    self._target(*self._args, **self._kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 175, in <module>
+    b_input_ids = data[0].to(model_engine.local_rank)
+AttributeError: 'int' object has no attribute 'to'
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+srun: error: gpu15: tasks 0-1: Exited with exit code 1
+srun: error: gpu16: tasks 5,7: Exited with exit code 1
+srun: error: gpu15: task 3: Exited with exit code 1
+srun: error: gpu15: task 2: Exited with exit code 1
+srun: error: gpu16: tasks 4,6: Exited with exit code 1

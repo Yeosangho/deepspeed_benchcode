@@ -1,0 +1,47 @@
+==========================================
+SLURM_JOB_ID = 155432
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+True
+[2022-12-11 16:08:34,292] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,296] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,297] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,300] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,302] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,296] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,297] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:08:34,300] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Files already downloaded and verified
+Files already downloaded and verified
+horse truck   dog  ship
+[2022-12-11 16:08:38,063] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.0, git-hash=unknown, git-branch=unknown
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+truck   dog  deer   car
+ frog  frog   cat  bird
+  cat  ship truck horse
+ deer  deer   cat horse
+horse   car plane plane
+ deer truck  frog plane
+ ship plane horse  frog

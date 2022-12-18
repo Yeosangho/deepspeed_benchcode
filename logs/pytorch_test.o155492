@@ -1,0 +1,3118 @@
+==========================================
+SLURM_JOB_ID = 155492
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+[2022-12-11 18:20:17,306] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.0, git-hash=unknown, git-branch=unknown
+[2022-12-11 18:20:18,884] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.3040134906768799 seconds
+[2022-12-11 18:20:19,811] [INFO] [logging.py:68:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adam as basic optimizer
+[2022-12-11 18:20:19,815] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Basic Optimizer = {basic_optimizer.__class__.__name__}
+[2022-12-11 18:20:19,815] [INFO] [utils.py:52:is_zero_supported_optimizer] Checking ZeRO support for optimizer=FusedAdam type=<class 'deepspeed.ops.adam.fused_adam.FusedAdam'>
+[2022-12-11 18:20:19,816] [INFO] [logging.py:68:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer
+[2022-12-11 18:20:19,900] [INFO] [utils.py:827:see_memory_usage] Stage 3 initialize beginning
+[2022-12-11 18:20:19,901] [INFO] [utils.py:828:see_memory_usage] MA 0.48 GB         Max_MA 0.48 GB         CA 0.53 GB         Max_CA 1 GB 
+[2022-12-11 18:20:19,901] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 23.99 GB, percent = 6.4%
+[2022-12-11 18:20:19,902] [INFO] [stage3.py:114:__init__] Reduce bucket size 25000000
+[2022-12-11 18:20:19,902] [INFO] [stage3.py:115:__init__] Prefetch bucket size 50000000
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.20358681678771973 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Emitting ninja build file /home01/hpc72a03/.cache/torch_extensions/py38_cu113/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.30398988723754883 seconds
+[2022-12-11 18:20:20,258] [INFO] [utils.py:827:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2022-12-11 18:20:20,259] [INFO] [utils.py:828:see_memory_usage] MA 0.48 GB         Max_MA 0.48 GB         CA 0.53 GB         Max_CA 1 GB 
+[2022-12-11 18:20:20,259] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 23.99 GB, percent = 6.4%
+Parameter Offload: Total persistent parameters: 121344 in 98 params
+[2022-12-11 18:20:20,339] [INFO] [utils.py:827:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2022-12-11 18:20:20,339] [INFO] [utils.py:828:see_memory_usage] MA 0.08 GB         Max_MA 0.49 GB         CA 0.56 GB         Max_CA 1 GB 
+[2022-12-11 18:20:20,340] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 23.99 GB, percent = 6.4%
+[2022-12-11 18:20:20,538] [INFO] [stage3.py:368:_setup_for_real_optimizer] optimizer state initialized
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.3037095069885254 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.4038722515106201 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0008947849273681641 seconds
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.32112717628479004 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.40434980392456055 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0006606578826904297 seconds
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.30324459075927734 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.4030165672302246 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0006358623504638672 seconds
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.4047279357910156 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.3026704788208008 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0009369850158691406 seconds
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.3045475482940674 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.405132532119751 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0006988048553466797 seconds
+Loading extension module utils...
+Time to load utils op: 0.36718153953552246 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0011606216430664062 seconds
+      Id  ...                                               Text
+0      1  ...  I have bought several of the Vitality canned d...
+1      2  ...  Product arrived labeled as Jumbo Salted Peanut...
+2      3  ...  This is a confection that has been around a fe...
+3      4  ...  If you are looking for the secret ingredient i...
+4      5  ...  Great taffy at a great price.  There was a wid...
+..   ...  ...                                                ...
+595  596  ...  This is the second purchase of Kettle Potato C...
+596  597  ...  How to achieve potato chip nirvana? It's simpl...
+597  598  ...  I found these more than 10 years ago in a heal...
+598  599  ...  But you will enjoy ever step. I gained 5 lbs w...
+599  600  ...  These are the best spicy chips I have ever had...
+
+[600 rows x 10 columns]
+600
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.30377936363220215 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module utils...
+Time to load utils op: 0.40431642532348633 seconds
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0006902217864990234 seconds
+[2022-12-11 18:20:20,680] [INFO] [utils.py:827:see_memory_usage] After initializing ZeRO optimizer
+[2022-12-11 18:20:20,681] [INFO] [utils.py:828:see_memory_usage] MA 0.4 GB         Max_MA 0.69 GB         CA 0.91 GB         Max_CA 1 GB 
+[2022-12-11 18:20:20,682] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 24.24 GB, percent = 6.4%
+[2022-12-11 18:20:20,682] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Final Optimizer = adam
+[2022-12-11 18:20:20,682] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupLR
+[2022-12-11 18:20:20,682] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupLR object at 0x2b7419b55fa0>
+[2022-12-11 18:20:20,682] [INFO] [logging.py:68:log_dist] [Rank 0] step=0, skipped=0, lr=[0.001], mom=[[0.8, 0.999]]
+[2022-12-11 18:20:20,683] [INFO] [config.py:975:print] DeepSpeedEngine configuration:
+[2022-12-11 18:20:20,683] [INFO] [config.py:979:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2022-12-11 18:20:20,683] [INFO] [config.py:979:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2022-12-11 18:20:20,684] [INFO] [config.py:979:print]   amp_enabled .................. False
+[2022-12-11 18:20:20,684] [INFO] [config.py:979:print]   amp_params ................... False
+[2022-12-11 18:20:20,684] [INFO] [config.py:979:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": null, 
+    "exps_dir": null, 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2022-12-11 18:20:20,684] [INFO] [config.py:979:print]   bfloat16_enabled ............. False
+[2022-12-11 18:20:20,684] [INFO] [config.py:979:print]   checkpoint_tag_validation_enabled  True
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   checkpoint_tag_validation_fail  False
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x2b7419d18fd0>
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   communication_data_type ...... None
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   curriculum_enabled ........... False
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   curriculum_params ............ False
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   dataloader_drop_last ......... False
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   disable_allgather ............ False
+[2022-12-11 18:20:20,685] [INFO] [config.py:979:print]   dump_state ................... False
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   dynamic_loss_scale_args ...... None
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_enabled ........... False
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_gas_boundary_resolution  1
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_layer_num ......... 0
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_max_iter .......... 100
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_stability ......... 1e-06
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_tol ............... 0.01
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   eigenvalue_verbose ........... False
+[2022-12-11 18:20:20,686] [INFO] [config.py:979:print]   elasticity_enabled ........... False
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   fp16_auto_cast ............... None
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   fp16_enabled ................. False
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   fp16_master_weights_and_gradients  False
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   global_rank .................. 0
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   gradient_accumulation_steps .. 1
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   gradient_clipping ............ 1.0
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   gradient_predivide_factor .... 1.0
+[2022-12-11 18:20:20,687] [INFO] [config.py:979:print]   initial_dynamic_scale ........ 4294967296
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   load_universal_checkpoint .... False
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   loss_scale ................... 0
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   memory_breakdown ............. False
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   monitor_config ............... <deepspeed.monitor.config.DeepSpeedMonitorConfig object at 0x2b7419d272b0>
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   optimizer_legacy_fusion ...... False
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   optimizer_name ............... adam
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   optimizer_params ............. {'lr': 0.001, 'betas': [0.8, 0.999], 'eps': 1e-08, 'weight_decay': 3e-07}
+[2022-12-11 18:20:20,688] [INFO] [config.py:979:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   pld_enabled .................. False
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   pld_params ................... False
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   prescale_gradients ........... False
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   scheduler_name ............... WarmupLR
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   scheduler_params ............. {'warmup_min_lr': 0, 'warmup_max_lr': 0.001, 'warmup_num_steps': 1000}
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   sparse_attention ............. None
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   sparse_gradients_enabled ..... False
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   steps_per_print .............. 2000
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   train_batch_size ............. 16
+[2022-12-11 18:20:20,689] [INFO] [config.py:979:print]   train_micro_batch_size_per_gpu  2
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   wall_clock_breakdown ......... False
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   world_size ................... 8
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   zero_allow_untested_optimizer  False
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=25000000 allgather_partitions=True allgather_bucket_size=25000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   zero_enabled ................. True
+[2022-12-11 18:20:20,690] [INFO] [config.py:979:print]   zero_optimization_stage ...... 3
+[2022-12-11 18:20:20,690] [INFO] [config.py:981:print]   json = {
+    "train_batch_size": 16, 
+    "steps_per_print": 2.000000e+03, 
+    "optimizer": {
+        "type": "Adam", 
+        "params": {
+            "lr": 0.001, 
+            "betas": [0.8, 0.999], 
+            "eps": 1e-08, 
+            "weight_decay": 3e-07
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupLR", 
+        "params": {
+            "warmup_min_lr": 0, 
+            "warmup_max_lr": 0.001, 
+            "warmup_num_steps": 1000
+        }
+    }, 
+    "gradient_clipping": 1.0, 
+    "prescale_gradients": false, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "wall_clock_breakdown": false, 
+    "zero_optimization": {
+        "stage": 3, 
+        "allgather_bucket_size": 2.500000e+07, 
+        "reduce_bucket_size": 2.500000e+07, 
+        "overlap_comm": false
+    }, 
+    "compression_training": {
+        "weight_quantization": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }, 
+        "activation_quantization": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }, 
+        "sparse_pruning": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }, 
+        "row_pruning": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }, 
+        "head_pruning": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }, 
+        "channel_pruning": {
+            "shared_parameters": {
+            }, 
+            "different_groups": {
+            }
+        }
+    }
+}
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0026433467864990234 seconds
+tensor(7.3949, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4343.97216796875
+tensor(7.8524, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4664.42236328125
+tensor(6.2844, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.42529296875
+tensor(2.8347, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.42529296875
+tensor(4.1039, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(1.4405, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(1.0736, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3439, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3791, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.17529296875
+tensor(0.9555, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.92529296875
+tensor(0.5692, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1957, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4038, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2139, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.8102, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.4491, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.67529296875
+tensor(1.0248, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.6399, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.3655, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.8252, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.42529296875
+tensor(1.1532, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.2210, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2437, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.2360, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.2363, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3544, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(1.0457, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4602, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.42529296875
+tensor(0.2518, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2023, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.2186, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.8214, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3064, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.7534, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2401, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.7022, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(1.2677, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.1310, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5060, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.92529296875
+tensor(0.2097, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.1980, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(1.7834, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4379, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.4083, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.5846, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1965, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.6489, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2663, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.7547, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.3556, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.68212890625
+tensor(0.2061, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2684, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.2665, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.42529296875
+tensor(0.3225, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.6264, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2414, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(1.2354, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.2311, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.3760, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(1.4025, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5168, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.6942, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4931, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3063, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2742, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2625, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3501, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2570, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3469, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.91845703125
+tensor(0.4343, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3319, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.4337, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4790, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.9431, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.2815, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2897, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2301, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4387, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.67529296875
+tensor(0.2227, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.93212890625
+tensor(0.5031, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2062, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3863, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.4129, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3791, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3120, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3730, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.8407, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5964, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.3091, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3493, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.93212890625
+tensor(0.2838, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(1.0610, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1452, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(1.7606, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4323, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2516, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5425, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3687, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.43212890625
+tensor(0.3190, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.1608, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4912, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.7201, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.67529296875
+tensor(0.3470, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3468, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(1.1674, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.67529296875
+tensor(1.1390, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(1.3422, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2498, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.9666, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.91845703125
+tensor(0.8384, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.8952, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.3166, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3777, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3066, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2675, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5883, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.2947, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.7639, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(1.5360, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.4099, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5104, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.2221, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.6027, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5756, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2287, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.6300, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4343.70751953125
+after forward allocated memory size is .. 4664.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4672.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.68212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.18212890625
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4672.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.68212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.43212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4669.80029296875
+after forward allocated memory size is .. 4670.68212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4671.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.43212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4669.80029296875
+after forward allocated memory size is .. 4670.68212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4340.51025390625
+after forward allocated memory size is .. 4664.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4338.42626953125
+after forward allocated memory size is .. 4662.55029296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.91845703125
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.79345703125
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4343.15576171875
+after forward allocated memory size is .. 4664.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.91845703125
+after forward allocated memory size is .. 4668.55029296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4338.04248046875
+after forward allocated memory size is .. 4661.80029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4665.05029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30712890625
+after forward allocated memory size is .. 4665.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.18212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4667.55712890625
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.30712890625
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.93212890625
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.18212890625
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.30029296875
+after forward allocated memory size is .. 4668.18212890625
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.55029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.55712890625
+after forward allocated memory size is .. 4669.18212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.93212890625
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.55712890625
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4346.72802734375
+after forward allocated memory size is .. 4665.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.30029296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4338.84423828125
+after forward allocated memory size is .. 4664.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.43212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+tensor(0.6080, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(1.0322, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.5978, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.6250, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2477, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.8715, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5683, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5962, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.3713, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3192, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.2496, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.05029296875
+tensor(0.5003, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4065, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3266, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.2457, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.8909, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4957, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.9437, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.5411, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.5524, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.67529296875
+tensor(0.7685, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5052, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.4598, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.6941, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.42529296875
+tensor(0.2982, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.4073, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.6352, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.3287, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5811, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4565, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.3039, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4563, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.42529296875
+tensor(0.7348, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2095, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.1815, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.1703, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.1523, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4216, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.9248, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1894, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4785, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3621, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.2818, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.92529296875
+tensor(0.3926, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.4993, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2977, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4776, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.3485, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.2818, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2657, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.5679, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2152, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5640, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.4974, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.68212890625
+tensor(0.4032, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.5054, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.2412, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.42529296875
+tensor(0.3621, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.6490, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(1.3136, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2067, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.3329, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.5279, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2896, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2798, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(1.0533, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4174, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.6472, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3215, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2763, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.1672, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2658, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2712, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.91845703125
+tensor(0.8881, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2627, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.4066, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.3732, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.7426, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.3992, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.5294, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2625, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2807, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.67529296875
+tensor(0.7644, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.93212890625
+tensor(0.2754, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3589, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2534, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.6308, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3962, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4716, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.8994, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3996, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3131, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.3907, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.6662, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.93212890625
+tensor(0.6351, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.5324, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1810, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.7638, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2205, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(1.0706, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.1009, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.6400, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.43212890625
+tensor(0.2309, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4060, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.6059, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5241, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.67529296875
+tensor(0.3495, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(2.1022, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.2847, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.67529296875
+tensor(0.3535, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.4015, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2744, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1863, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.91845703125
+tensor(0.2373, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.2559, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.1748, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.3629, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.1428, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.7439, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.3110, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.3343, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.3915, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.7286, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.3834, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.1899, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.3596, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4671.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.43212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4669.80029296875
+after forward allocated memory size is .. 4670.68212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4671.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.43212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4669.80029296875
+after forward allocated memory size is .. 4670.68212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4672.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4671.42529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.68212890625
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.91845703125
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.16845703125
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4671.67529296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.18212890625
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4669.18212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.05029296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.68212890625
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.30029296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.30029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.80029296875
+after forward allocated memory size is .. 4671.68212890625
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4669.05029296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.30029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.93212890625
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.55029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4666.55029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4668.18212890625
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.67529296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4668.05029296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4665.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4667.43212890625
+after forward allocated memory size is .. 4667.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.68212890625
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4665.67529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.68212890625
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.3514, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.7420, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.7168, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.4628, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5548, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.92529296875
+tensor(0.5575, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3413, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.1446, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4163, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(1.2836, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5234, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.5707, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(2.2904, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.6296, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.1944, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.05029296875
+tensor(0.6061, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.4256, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(2.5362, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.4431, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.67529296875
+tensor(0.3907, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.4165, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.7228, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.1506, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.6566, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.67529296875
+tensor(0.8579, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2092, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.2637, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.2787, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4671.42529296875
+tensor(1.0043, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.17529296875
+tensor(0.8187, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3930, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.92529296875
+tensor(0.6907, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.3856, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(1.2763, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+tensor(0.9152, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.6740, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.42529296875
+tensor(0.5799, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.1174, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.67529296875
+tensor(0.2190, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.2247, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.3359, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.92529296875
+tensor(0.5446, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.5488, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.6709, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4670.17529296875
+tensor(0.8045, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.42529296875
+tensor(0.5869, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4669.17529296875
+tensor(0.3291, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4667.92529296875
+tensor(0.5702, device='cuda:0', grad_fn=<PreBackwardFunctionBackward>)
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.68212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.30029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.66845703125
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4669.93212890625
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.30029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4670.18212890625
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4669.30029296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.93212890625
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.80029296875
+after forward allocated memory size is .. 4668.16845703125
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.67529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4668.30029296875
+after forward allocated memory size is .. 4666.17529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.30712890625
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4667.17529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.30029296875
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.80712890625
+after forward allocated memory size is .. 4666.67529296875
+after forward allocated memory size is .. 4667.92529296875
+after forward allocated memory size is .. 4667.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.80712890625
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4665.92529296875
+after forward allocated memory size is .. 4666.92529296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4665.80029296875
+after forward allocated memory size is .. 4666.42529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4666.30029296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4666.80029296875
+after forward allocated memory size is .. 4667.55029296875
+after forward allocated memory size is .. 4667.05029296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4671.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4668.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4668.67529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.92529296875
+after forward allocated memory size is .. 4670.43212890625
+after forward allocated memory size is .. 4670.55029296875
+after forward allocated memory size is .. 4669.92529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4669.17529296875
+after forward allocated memory size is .. 4670.42529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.67529296875
+after forward allocated memory size is .. 4671.17529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4670.17529296875
+after forward allocated memory size is .. 4668.42529296875
+after forward allocated memory size is .. 4670.93212890625
+after forward allocated memory size is .. 4668.92529296875
+after forward allocated memory size is .. 4670.67529296875
+after forward allocated memory size is .. 4669.42529296875
+after forward allocated memory size is .. 4671.18212890625

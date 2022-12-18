@@ -1,0 +1,30 @@
+==========================================
+SLURM_JOB_ID = 155430
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+[2022-12-11 16:01:27,215] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,220] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,215] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,220] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,224] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,221] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,221] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2022-12-11 16:01:27,221] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified

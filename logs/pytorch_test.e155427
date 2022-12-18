@@ -1,0 +1,15 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+Could not find conda environment: ligthning
+You can list all discoverable environments with `conda info --envs`.
+
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+slurmstepd: error: execve(): /home01/hpc72a03/.conda/envs/ligthning/bin/python: No such file or directory
+srun: error: gpu15: tasks 0-3: Exited with exit code 2
+srun: error: gpu16: tasks 4-7: Exited with exit code 2

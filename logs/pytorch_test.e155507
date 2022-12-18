@@ -1,0 +1,181 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 262, in __init__
+    self._configure_with_arguments(args, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 883, in _configure_with_arguments
+    self._config = DeepSpeedConfig(self.config, mpu)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/config.py", line 705, in __init__
+    self._param_dict = json.load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 33 column 3 (char 608)
+srun: error: gpu20: tasks 4-5,7: Exited with exit code 1
+srun: error: gpu20: task 6: Exited with exit code 1
+srun: error: gpu19: tasks 0-3: Exited with exit code 1

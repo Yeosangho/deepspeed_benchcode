@@ -1,0 +1,68 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    os.environ["LOCAL_RANK"] = device_id
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 680, in __setitem__
+    value = self.encodevalue(value)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 750, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not int
+srun: error: gpu15: tasks 0-3: Exited with exit code 1
+srun: error: gpu16: tasks 4-7: Exited with exit code 1

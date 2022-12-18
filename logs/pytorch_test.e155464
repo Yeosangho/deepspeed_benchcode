@@ -1,0 +1,76 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+usage: gpt2_ds.py [-h] [--with_cuda] [--use_ema] [-b BATCH_SIZE] [-e EPOCHS]
+                  [--local_rank LOCAL_RANK] [--log-interval LOG_INTERVAL]
+                  [--moe] [--ep-world-size EP_WORLD_SIZE]
+                  [--num-experts NUM_EXPERTS [NUM_EXPERTS ...]]
+                  [--mlp-type MLP_TYPE] [--top-k TOP_K]
+                  [--min-capacity MIN_CAPACITY]
+                  [--noisy-gate-policy NOISY_GATE_POLICY] [--moe-param-group]
+gpt2_ds.py: error: unrecognized arguments: --deepspeed_config ds_config.json
+srun: error: gpu15: tasks 0-3: Exited with exit code 2
+srun: error: gpu16: tasks 4-7: Exited with exit code 2

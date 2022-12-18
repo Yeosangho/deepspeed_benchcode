@@ -1,0 +1,47 @@
+==========================================
+SLURM_JOB_ID = 155431
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+True
+[2022-12-11 16:05:26,988] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,993] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,988] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,991] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,998] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,994] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,994] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+True
+[2022-12-11 16:05:26,999] [INFO] [comm.py:628:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+ ship  ship   car  deer
+ bird truck  ship horse
+truck   car  deer horse
+  dog truck truck   car
+plane  bird plane   car
+  cat  ship  frog   car
+[2022-12-11 16:05:32,002] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.0, git-hash=unknown, git-branch=unknown
+ deer truck   dog   dog
+ deer  bird  frog truck

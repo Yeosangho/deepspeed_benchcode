@@ -1,0 +1,126 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 0/300 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 192, in <module>
+    model_engine.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1989, in step
+    self._take_model_step(lr_kwargs)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1891, in _take_model_step
+    self.optimizer.step()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py", line 1807, in step
+    all_gather_dp_groups(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/utils.py", line 991, in all_gather_dp_groups
+    partitioned_params[partition_id].numel() * dp_world_size //
+ZeroDivisionError: integer division or modulo by zero
+srun: error: gpu19: tasks 1-2: Exited with exit code 1
+srun: error: gpu20: tasks 4-5,7: Exited with exit code 1
+srun: error: gpu19: tasks 0,3: Exited with exit code 1
+srun: error: gpu20: task 6: Exited with exit code 1

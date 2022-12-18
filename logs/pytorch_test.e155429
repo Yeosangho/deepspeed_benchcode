@@ -1,0 +1,68 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 107, in <module>
+    deepspeed.init_distributed()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 620, in init_distributed
+    mpi_discovery(distributed_port=distributed_port, verbose=verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 639, in mpi_discovery
+    from mpi4py import MPI
+ModuleNotFoundError: No module named 'mpi4py'
+srun: error: gpu16: tasks 4-7: Exited with exit code 1
+srun: error: gpu15: tasks 0-3: Exited with exit code 1

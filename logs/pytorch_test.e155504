@@ -1,0 +1,102 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 496, in jit_load
+    os.makedirs(ext_path, exist_ok=True)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/tmp/torch_extensions/fused_adam'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 496, in jit_load
+    os.makedirs(ext_path, exist_ok=True)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/tmp/torch_extensions/fused_adam'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 496, in jit_load
+    os.makedirs(ext_path, exist_ok=True)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/tmp/torch_extensions/fused_adam'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 169, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 496, in jit_load
+    os.makedirs(ext_path, exist_ok=True)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/tmp/torch_extensions/fused_adam'
+srun: error: gpu20: tasks 4-7: Exited with exit code 1
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 155504 ON gpu19 CANCELLED AT 2022-12-11T18:45:31 ***
+slurmstepd: error: *** STEP 155504.0 ON gpu19 CANCELLED AT 2022-12-11T18:45:31 ***

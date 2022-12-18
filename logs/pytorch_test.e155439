@@ -1,0 +1,246 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py:329: UserWarning: 
+
+                               !! WARNING !!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Your compiler (c++ 4.8.5) may be ABI-incompatible with PyTorch!
+Please use a compiler that is ABI-compatible with GCC 5.0 and above.
+See https://gcc.gnu.org/onlinedocs/libstdc++/manual/abi.html.
+
+See https://gist.github.com/goldsborough/d466f43e8ffc948ff92de7486c5216d6
+for instructions on how to install GCC 5 or higher.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                              !! WARNING !!
+
+  warnings.warn(ABI_INCOMPATIBILITY_WARNING.format(compiler))
+Traceback (most recent call last):
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1740, in _run_ninja_build
+    subprocess.run(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1357, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1469, in _write_ninja_file_and_build_library
+    _run_ninja_build(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1756, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error building extension 'fused_adam'
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 248, in <module>
+    model_engine, optimizer, trainloader, __ = deepspeed.initialize(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/__init__.py", line 124, in initialize
+    engine = DeepSpeedEngine(args=args,
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 319, in __init__
+    self._configure_optimizer(optimizer, model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1107, in _configure_optimizer
+    basic_optimizer = self._configure_basic_optimizer(model_parameters)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 1201, in _configure_basic_optimizer
+    optimizer = FusedAdam(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/adam/fused_adam.py", line 72, in __init__
+    fused_adam_cuda = FusedAdamBuilder().load()
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 471, in load
+    return self.jit_load(verbose)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/op_builder/builder.py", line 513, in jit_load
+    op_module = load(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1144, in load
+    return _jit_compile(
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1382, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1775, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 556, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1166, in create_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+ImportError: /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/fused_adam.so: cannot open shared object file: No such file or directory
+srun: error: gpu15: tasks 1,3: Exited with exit code 1
+srun: error: gpu16: tasks 5-7: Exited with exit code 1
+srun: error: gpu15: tasks 0,2: Exited with exit code 1
+srun: error: gpu16: task 4: Exited with exit code 1

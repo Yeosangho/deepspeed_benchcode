@@ -1,0 +1,39 @@
+==========================================
+SLURM_JOB_ID = 155434
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+True
+Files already downloaded and verified
+Files already downloaded and verified
+truck   car plane   dog
+[2022-12-11 16:15:04,768] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.0, git-hash=unknown, git-branch=unknown
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+ bird plane   car  bird
+ deer  deer   car horse
+ ship   car truck plane
+horse  ship  ship plane
+  car   car  frog  deer
+ deer plane  deer horse
+ deer  ship  frog  bird

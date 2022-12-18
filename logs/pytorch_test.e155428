@@ -1,0 +1,12 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+srun: error: gpu16: tasks 4-7: Exited with exit code 2
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+/home01/hpc72a03/.conda/envs/lightning/bin/python: can't open file 'test_fsdp_fairscale041.py': [Errno 2] No such file or directory
+srun: error: gpu15: tasks 0-3: Exited with exit code 2

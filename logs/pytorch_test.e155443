@@ -1,0 +1,44 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+Traceback (most recent call last):
+  File "gpt2_ds.py", line 104, in <module>
+    class GPT2Dataset(Dataset):
+NameError: name 'Dataset' is not defined
+srun: error: gpu15: tasks 0-3: Exited with exit code 1
+srun: error: gpu16: tasks 4-7: Exited with exit code 1

@@ -1,0 +1,129 @@
+==========================================
+SLURM_JOB_ID = 155439
+SLURM_NODELIST = gpu[15-16]
+==========================================
+NODELIST=gpu[15-16]
+MASTER_ADDR=gpu15
+True
+Files already downloaded and verified
+Files already downloaded and verified
+  car  ship horse  deer
+[2022-12-11 16:28:59,464] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.0, git-hash=unknown, git-branch=unknown
+[2022-12-11 16:28:59,469] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+True
+Files already downloaded and verified
+Files already downloaded and verified
+  cat   dog  frog   cat
+[2022-12-11 16:29:00,364] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+ frog  frog   dog   car
+[2022-12-11 16:29:00,382] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+truck horse truck  ship
+[2022-12-11 16:29:00,395] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+truck  ship  frog  ship
+[2022-12-11 16:29:00,425] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+horse   car   car  ship
+[2022-12-11 16:29:00,456] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+  dog truck   car  bird
+[2022-12-11 16:29:00,479] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+ bird plane plane  deer
+[2022-12-11 16:29:00,513] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2022-12-11 16:29:00,676] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home01/hpc72a03/.cache/torch_extensions/py38_cu113/fused_adam/build.ninja...
+Building extension module fused_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/3] c++ -MMD -MF fused_adam_frontend.o.d -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/includes -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/TH -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/THC -isystem /apps/cuda/11.3/include -isystem /home01/hpc72a03/.conda/envs/lightning/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++14 -O3 -std=c++14 -g -Wno-reorder -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -c /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/fused_adam_frontend.cpp -o fused_adam_frontend.o 
+FAILED: fused_adam_frontend.o 
+c++ -MMD -MF fused_adam_frontend.o.d -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/includes -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/TH -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/THC -isystem /apps/cuda/11.3/include -isystem /home01/hpc72a03/.conda/envs/lightning/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++14 -O3 -std=c++14 -g -Wno-reorder -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -c /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/fused_adam_frontend.cpp -o fused_adam_frontend.o 
+c++: error: unrecognized command line option ‘-std=c++14’
+c++: error: unrecognized command line option ‘-std=c++14’
+[2/3] /apps/cuda/11.3/bin/nvcc  -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/includes -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/TH -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/THC -isystem /apps/cuda/11.3/include -isystem /home01/hpc72a03/.conda/envs/lightning/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_70,code=compute_70 -gencode=arch=compute_70,code=sm_70 --compiler-options '-fPIC' -O3 -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -lineinfo --use_fast_math -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_70,code=compute_70 -std=c++14 -c /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu -o multi_tensor_adam.cuda.o 
+FAILED: multi_tensor_adam.cuda.o 
+/apps/cuda/11.3/bin/nvcc  -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/includes -I/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/TH -isystem /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/THC -isystem /apps/cuda/11.3/include -isystem /home01/hpc72a03/.conda/envs/lightning/include/python3.8 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_70,code=compute_70 -gencode=arch=compute_70,code=sm_70 --compiler-options '-fPIC' -O3 -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -lineinfo --use_fast_math -gencode=arch=compute_70,code=sm_70 -gencode=arch=compute_70,code=compute_70 -std=c++14 -c /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu -o multi_tensor_adam.cuda.o 
+nvcc warning : The -std=c++14 flag is not supported with the configured host compiler. Flag will be ignored.
+In file included from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu:6:0:
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/ATen.h:4:2: error: #error C++14 or later compatible compiler is required to use ATen.
+ #error C++14 or later compatible compiler is required to use ATen.
+  ^
+In file included from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/DeviceType.h:8:0,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Device.h:3,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu:6:
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:142:20: error: missing binary operator before token "("
+ #if __has_attribute(used)
+                    ^
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/macros/Macros.h:222:22: error: missing binary operator before token "("
+ #elif __has_attribute(always_inline) || defined(__GNUC__)
+                      ^
+In file included from /usr/include/c++/4.8.2/type_traits:35:0,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/C++17.h:11,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/string_view.h:4,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/StringUtil.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Device.h:5,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu:6:
+/usr/include/c++/4.8.2/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/string_view.h:4:0,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/StringUtil.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/Exception.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Device.h:5,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/Allocator.h:6,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/ATen.h:7,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu:6:
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/C++17.h:16:2: error: #error "You're trying to build PyTorch with a too old version of GCC. We need GCC 5 or later."
+ #error \
+  ^
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/C++17.h:27:2: error: #error You need C++14 to compile PyTorch
+ #error You need C++14 to compile PyTorch
+  ^
+In file included from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/typeid.h:25:0,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/ScalarTypeToTypeMeta.h:4,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/TensorOptions.h:10,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/TensorImpl.h:9,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/core/GeneratorImpl.h:12,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/core/Generator.h:22,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/Context.h:4,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/ATen/ATen.h:9,
+                 from /home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu:6:
+/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/torch/include/c10/util/TypeIndex.h:76:2: error: #error "You're running a too old version of GCC. We need GCC 5 or later."
+ #error "You're running a too old version of GCC. We need GCC 5 or later."
+  ^
+ninja: build stopped: subcommand failed.
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...
+Using /home01/hpc72a03/.cache/torch_extensions/py38_cu113 as PyTorch extensions root...
+Loading extension module fused_adam...

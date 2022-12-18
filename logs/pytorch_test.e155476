@@ -1,0 +1,26 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+[00;34m 	'gcc/10.2.0' supports the following modules [0m
+	{MPI}
+	'mpi/openmpi-3.1.5' 'mpi/openmpi-4.1.1' 'mpi/mvapich2-2.3.6'
+	{CUDA_MPI}
+	'cudampi/openmpi-3.1.5' 'cudampi/openmpi-4.1.1' 'cudampi/mvapich2-2.3.6'
+[00;31m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+	{libraries}
+	'hdf4/4.2.13' 'hdf5/1.10.2' 'hdf5/1.12.0' 'lapack/3.7.0' 'lapack/3.10.0' 'ncl/6.5.0' 'netcdf/4.6.1'
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+  0%|          | 0/300 [00:00<?, ?it/s]  4%|▍         | 12/300 [00:00<00:02, 119.70it/s] 30%|███       | 91/300 [00:00<00:00, 513.15it/s] 61%|██████    | 183/300 [00:00<00:00, 696.30it/s] 91%|█████████ | 273/300 [00:00<00:00, 773.41it/s]100%|██████████| 300/300 [00:00<00:00, 641.00it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  1%|          | 2/300 [00:00<00:16, 18.30it/s] 34%|███▍      | 103/300 [00:00<00:00, 577.69it/s] 66%|██████▌   | 197/300 [00:00<00:00, 738.69it/s] 97%|█████████▋| 292/300 [00:00<00:00, 819.88it/s]100%|██████████| 300/300 [00:00<00:00, 661.14it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 1/300 [00:00<00:32,  9.34it/s] 22%|██▏       | 66/300 [00:00<00:00, 373.89it/s] 51%|█████     | 153/300 [00:00<00:00, 593.53it/s] 80%|████████  | 241/300 [00:00<00:00, 702.22it/s]100%|██████████| 300/300 [00:00<00:00, 588.97it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 1/300 [00:00<00:35,  8.54it/s] 23%|██▎       | 70/300 [00:00<00:00, 382.22it/s] 56%|█████▌    | 167/300 [00:00<00:00, 639.18it/s] 87%|████████▋ | 262/300 [00:00<00:00, 755.95it/s]100%|██████████| 300/300 [00:00<00:00, 609.48it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  1%|          | 2/300 [00:00<00:18, 16.27it/s] 29%|██▉       | 87/300 [00:00<00:00, 463.90it/s] 58%|█████▊    | 175/300 [00:00<00:00, 644.33it/s] 87%|████████▋ | 261/300 [00:00<00:00, 726.50it/s]100%|██████████| 300/300 [00:00<00:00, 589.58it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  1%|          | 2/300 [00:00<00:20, 14.21it/s] 30%|██▉       | 89/300 [00:00<00:00, 443.59it/s] 59%|█████▊    | 176/300 [00:00<00:00, 621.42it/s] 86%|████████▋ | 259/300 [00:00<00:00, 698.12it/s]100%|██████████| 300/300 [00:00<00:00, 569.94it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  1%|          | 2/300 [00:00<00:15, 19.33it/s] 28%|██▊       | 83/300 [00:00<00:00, 476.06it/s] 55%|█████▌    | 165/300 [00:00<00:00, 631.20it/s] 84%|████████▍ | 253/300 [00:00<00:00, 726.24it/s]100%|██████████| 300/300 [00:00<00:00, 601.63it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 1/300 [00:00<00:31,  9.59it/s] 24%|██▎       | 71/300 [00:00<00:00, 408.45it/s] 54%|█████▍    | 163/300 [00:00<00:00, 639.70it/s] 86%|████████▌ | 257/300 [00:00<00:00, 757.49it/s]100%|██████████| 300/300 [00:00<00:00, 610.13it/s]

@@ -1,0 +1,52 @@
+[00;33m 	'cuda/11.3' does not supports the {CUDA_MPI}. [0m
+[00;34m 	{CUDA_MPI} is only supported in cuda 11.4 version. [0m
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+Traceback (most recent call last):
+  File "cifar10_deepspeed.py", line 108, in <module>
+    deepspeed.init_distributed(dist_backend="nccl", auto_mpi_discovery=False, dist_init_required =False)
+  File "/home01/hpc72a03/.conda/envs/lightning/lib/python3.8/site-packages/deepspeed/comm/comm.py", line 604, in init_distributed
+    assert (
+AssertionError: Distributed backend is not initialized. Please set dist_init_required to True or initialize before calling deepspeed.initialize()
+srun: error: gpu15: tasks 0-3: Exited with exit code 1
+srun: error: gpu16: tasks 4-7: Exited with exit code 1
